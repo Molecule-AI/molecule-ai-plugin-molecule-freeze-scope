@@ -1,0 +1,13 @@
+name: molecule-freeze-scope
+version: 0.1.0
+description: Lock edits to a single path glob via .claude/freeze. PreToolUse:Edit/Write hook.
+hook: pre-edit-freeze
+runtime: claude_code
+tags:
+  - molecule
+  - guardrails
+settings:
+  freeze_file_path: .claude/freeze
+  override_roles: []
+  missing_freeze_mode: open
+  log_permitted_edits: false
